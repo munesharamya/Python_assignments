@@ -1,0 +1,66 @@
+sets:
+a set is a unordered collection of data.
+s=set() # empty set
+print(s)
+r={1,2,3,4,5,6}
+r.add(7)
+print(r)
+#we add list in the set
+r1={1,2,3,4,5,6}
+r1.update([7,8,9])
+print(r1)
+#we remove digit from the set
+r4={1,2,3,4,5,6}
+r4.remove(4)
+print(r4)
+#r5={1,2,3,4,5,6}
+#r5.remove(7)
+#print(r5) #if we remove not existing digit then ,we get error like keyword=6
+#discard
+r51={1,2,3,4,5,6}
+r51.discard(7)
+print(r51)
+#built in function
+#intersection common in both sets
+w1={1,2,3,4,5,6}
+w2={3,4,5,6,}
+w4={6,7,8,9}
+w3=w1.intersection(w2,w4)#intersection of three sets
+print(w3)
+#difference
+t1={1,2,3}
+t2={3,4,5}
+t5={4,5,6}
+t3=t1.difference(t2)
+t4=t2.difference(t1)
+t7=t1.difference(t2,t4)
+#print(t3)
+print(t7)
+#print(t4)
+#symmentric_difference
+h1={1,3,4}
+h2={4,5,6,3}
+h3=h1.symmetric_difference(h2)
+print(h3)
+#cast list to set and remove duplicates in the list
+l3={1,2,3,4,1,2,3,4}
+l5=list(set(l3))
+print(l5)
+emp=['arun','priya','keerthi','tanjua']
+gym_dev=['munu','priya','sindhu']
+dev=['fiza','sandhya','priya','tanjua']
+if 'arun' in emp:
+    print('found')
+else:
+    print("not found")
+result=set(dev).intersection(gym_dev)
+result1=set(emp).intersection(gym_dev,dev)
+result2=set(emp).difference(gym_dev,dev)
+print(result)0
+print(result1)
+print(result2)
+
+
+
+
+

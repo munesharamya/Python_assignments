@@ -1,0 +1,50 @@
+msg="hello world"
+print(msg)
+#to write in multiple lines
+mse="""i am ramya from bangalore persuied my be in sjc
+of agg of 7.5 cgpa in the stream of cse
+Currently working as software intern in thundersoft"""
+print(mse)
+#to know the lenght of the string
+keyword="hydrabad"
+print(len(keyword))
+#to know the index of the string
+keywords="mulinagiri"
+print(len(keywords))
+print(keywords[8])
+print(keywords[3:8])
+print(keywords[:8])
+#to convert upper case to lower case and vice versa
+fit="BINDHU"
+print(fit.lower())
+fite="vaishu"
+print(fite.upper())
+#to count the character/words in the string
+fites="Hello world"
+print(fites.count('Hello'))
+print(fites.count('l'))
+#to count the keyword which does not exits
+k="hello world"
+print(k.count("universe")) #getting op as 0 rather than -1
+#to replace the string with another string
+ku="hello world"
+print(ku.replace("world","universe"))
+print(ku.replace("hello","namaskar"))
+#To concatenate two strings
+key1="ramya"
+key2="munesha"
+message="ramya" + ''+"munesha" #ramyamunesha
+message="ramya" + ','+"munesha" #ramya,munesha
+print(message)
+#how to concatenate using format command
+key3="ramya"
+key4="munesha"
+messages='{},{}.welcome'.format(key3,key4)
+print(messages)
+#concatenating using f  strings
+key5="ramya"
+key6="munesha"
+messages=f'{key5.upper()},{key6.lower()}.welcome'
+print(messages)
+#help for str
+print(help(str))

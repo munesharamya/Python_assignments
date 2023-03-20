@@ -1,0 +1,17 @@
+A fuction is set of instruction and packages which performs particular task.
+#how to declare a function
+def fun():
+    print("home function")
+fun()
+fun()
+fun()#calling function many times
+#return function
+def fun():
+    return 'hello world'
+print(fun().upper())
+#How to pass the arguments to the functions
+def fun(gretting):
+    return '{} function'.format(gretting)
+print(fun("hi"))
+#without passing the arguments
+

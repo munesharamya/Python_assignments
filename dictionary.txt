@@ -1,0 +1,21 @@
+students={'name':'ramya','age':23,'class':'a'}
+print(students)
+print(students['name'])
+print(students['age'])
+print(students.get('age'))
+print(students.get('phone'))
+students['name']='priya'
+print(students['name'])
+students.update({'name':'teju','age':56,'class':'b'})
+print(students)
+abc=students.pop('age')# it remove the key and value pair and returns the value of that removed variable
+print(abc)
+print(students)
+print(students.keys())
+print(students.values())
+for keys in students:
+    print(keys)
+print(len(students))
+print(students.items())
+for key,value in students.items():
+    print(keys,value)
